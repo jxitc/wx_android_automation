@@ -1,0 +1,23 @@
+<!-- Accessibility Service Configuration -->
+<!-- 无障碍服务配置文件 -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagRetrieveInteractiveWindows|flagReportViewIds"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="100"
+    android:packageNames="com.tencent.mm"
+    android:settingsActivity="com.example.wechatautomation.SettingsActivity" />
+
+<!--
+Key Features Enabled:
+- typeAllMask: Listen to all accessibility events
+- canPerformGestures: Can simulate touch gestures
+- canRetrieveWindowContent: Can read screen content
+- flagReportViewIds: Can access View IDs
+- packageNames: Only monitor WeChat app
+-->
